@@ -4,9 +4,134 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
+    
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+      <header class="main-header">
+        <nav class="main-navigation">
+<!--                Логотип c cсылкой ведущей на главную страницу-->
+            <a class="main-header-logo" href="index.html">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип главной страницы ">
+            </a>
+<!--                Панель навигации-->
+            <ul class="site-navigation">
+                <li> <a href="info.html">Информация</a></li>
+                <li> <a href="media.html">Фото и видео</a></li>
+                <li> <a href="state-map.html">Карта штата</a></li>
+                <li> <a href="hotels.html">Гостиницы</a></li>
+            </ul>  
+        </nav>
+      </header>
+<!--                Контент гланой страницы-->
+      <main class="main-container">
+          
+        <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+<!--                    Контентное изображение города Седона-->
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Добро пожаловать в Седону!">
+             
+<!--                    Блок преимуществ-->
+    <section class="features">
+        <h2 class="features-title">Cедона - небольшой городок в Аризоне, Заслуживающий большего!</h2>
+        <p class="features-items">Рассмотрим 5 причин почему Седона круче чем Гранд Каньон</p>
+<!--                    Список преимуществ-->
+          <ul class="features-list">
+<!--                    Первое преимуществе-->
+              <li class="features-one"> 
+                <h2>Настоящий городок</h2>
+                <p>- №1 - Седона - не аттракцион для туристов, там течет своя жизнь</p>  
+                <img src="http://placehold.it/150x100" width="150" height="100" alt="Город">
+              </li>
+              
+              <li>
+<!--                    Плюсы - описание-->
+                  <ul class="features-plus">
+                      <li>
+                          <h2>Жилье</h2>
+                          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                      </li>
+                      <li>
+                          <h2>Еда</h2>
+                          <p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
+                      </li>
+                      <li>
+                          <h2>Сувениры</h2>
+                          <p>Не только китайского, но и местного производства</p>
+                      </li>
+                  </ul>
+              </li>
+<!--                    Второе преимущество-->
+              <li class="features-two"> 
+                <h2>Там есть мост дьявола</h2>
+                <p>- №2 - Да, По нему можно пройти! Если конечно вы осмелитесь</p>  
+                <img src="http://placehold.it/150x100" width="150" height="100" alt="Каньон">
+              </li>
+<!--                    Третье - Пятое преимущество-->
+              <li>
+                  <ul class="features-three-four-five">
+                      <li>
+                          <h2>Небольшая площадь</h2>
+                          <p>- №3 - Все достопримечательности находятся очень близко</p>
+                      </li>
+                      <li>
+                          <h2>Красивая дорога</h2>
+                          <p>- №4 - Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+                      </li>
+                      <li>
+                          <h2>Мало туристов</h2>
+                          <p>- №5 - Большинство едет в Гранд Каньон и толпится там!</p>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+    </section>
+<!--                      Блок поиска гостиницы-->
+    <section class="search-hotels">
+        <h3 class="search-title">Заинтересовались?</h3>
+        <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    </section>
+<!--                    Изображение карты внизу, не знаю что там и как должно быть и просто вставил изображение-->
+    <p>
+    <img src="http://placehold.it/150x100" width="150" height="100" alt="Изображение карты">
+    </p>
+<!--                        Футер-->
+    <footer class="main-footer">
+<!--                        Тег-->
+        <p class="footer-tag">#VisitSedona</p>
+<!--                        Кнопки соц сетей-->
+        <div class="footer-social">
+            <ul>
+                <li> <a class="social-button" href="twitter.com">Твиттер</a></li>
+                <li> <a class="social-button" href="facebook.com">Фейсбук</a></li>
+                <li> <a class="social-button" href="youtube.com">Ютуб</a></li>
+            </ul>
+        </div> 
+<!--                        Лого с ссылкой на академию-->
+        
+        <a href="htmlacademy.ru">
+        <img src="#" alt="Лого htmlacademy.ru">
+        </a>
+    </footer>
+<!--                            Попап поиска гостиницы-->
+    <section class="modal-search">
+        <h2>Поиск гостиницы в Седоне</h2>
+        <form class="search-form" action="#" method="post">
+            <p>
+                <input class="check-in-date" type="text" name="in" placeholder="24 апреля 2018">
+            </p>
+            <p>
+                <input class="check-out-date" type="text" name="out" placeholder="4 июля 2018">
+            </p>
+            <p>
+                <input class="adults" type="text" name="number" placeholder="2">
+            </p>
+            <p>
+                <input class="children" type="text" name="number" placeholder="0">
+            </p>
+            <p>
+                <button class="button" type="submit">Найти</button>
+            </p>
+        </form>
+    </section>
+             
+      </main>
   </body>
 </html>

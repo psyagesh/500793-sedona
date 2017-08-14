@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+      <header class="main-header">
+        <nav class="main-navigation">
+<!--                Логотип c cсылкой ведущей на главную страницу-->
+            <a class="main-header-logo" href="index.html">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип главной страницы ">
+            </a>
+<!--                Панель навигации-->
+            <ul class="site-navigation">
+                <li> <a href="info.html">Информация</a></li>
+                <li> <a href="media.html">Фото и видео</a></li>
+                <li> <a href="state-map.html">Карта штата</a></li>
+                <li> <a href="hotels.html">Гостиницы</a></li>
+            </ul>  
+        </nav>
+      </header>
+<!--                Фильтр поиска гостиниц-->
+    <main>
+        <section class="search-filter">
+        <h1 class="visually-hidden">Фильтр гостиниц</h1>
+        <p>Инфраструктура:</p>
+        <ul class="infrastructure">
+            <li><input type="checkbox" checked name="swim-pool" id="swim-pool-field">
+                <label for="swim-pool-field">Бассейн</label>
+            </li>
+            <li><input type="checkbox"  name="parking" id="parking-field">
+                <label for="swim-pool-field">Парковка</label>
+            </li>
+            <li><input type="checkbox"  name="wifi" id="wifi-field">
+                <label for="swim-pool-field">Wi-Fi</label>
+            </li>
+        </ul>
+        <p>Тип жилья:</p>
+        <ul class="type-of-hotels">
+            <li><input type="checkbox" checked name="hotel" id="hotel-field">
+                <label for="swim-pool-field">Гостиница</label>
+            </li>
+            <li><input type="checkbox"  checked name="motel" id="motel-field">
+                <label for="swim-pool-field">Мотель</label>
+            </li>
+            <li><input type="checkbox"  checked name="apartments" id="apartments-field">
+                <label for="swim-pool-field">Апартаменты</label>
+            </li>
+        </ul>
+        <p>Стоимость в сутки(Р):</p>
+        <p>от 0</p>
+        <p>до 3000</p>
+        <button class="submit" type="submit">Показать</button>
+        </section>
+<!--                Сортировка-->
+        <section class="main-sorting">
+        <h3>Найдено:</h3>
+        <span>Сортировка:</span>
+            <ul class="sorting">
+                <li><a class="sorting-button" href="#">По цене</a></li>
+                <li><a class="sorting-button" href="#">По типу</a></li>
+                <li><a class="sorting-button" href="#">По рейтингу</a></li>
+            </ul>
+        </section>
+<!--                    Результат поиска-->
+        <section class="result">
+        <ul>
+            <li>
+                <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото Amara Resort">
+                <h3>Amara Resort & Spa</h3>
+                <p>Гостиница</p>
+                <p>от 3500 Р.</p>
+                <a class="button" href="#">Подробнее</a>
+                <a class="button" href="#">Забронировать</a>   
+                <span>Рейтинг:8,5</span>
+            </li>
+            <li>
+                <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото Amara Resort">
+                <h3>Desert Quail Inn</h3>
+                <p>Мотель</p>
+                <p>от 2000 Р.</p>
+                <a class="button" href="#">Подробнее</a>
+                <a class="button" href="#">Забронировать</a>  
+                <span>Рейтинг:8,9</span>
+            </li>
+            <li>
+                <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото Amara Resort">
+                <h3>Villas At Poco Diablos</h3>
+                <p>Апартаменты</p>
+                <p>от 4000 Р.</p>
+                <a class="button" href="#">Подробнее</a>
+                <a class="button" href="#">Забронировать</a>  
+                <span>Рейтинг:9,2</span>
+            </li>
+        </ul>
+        </section>
+    </main>
+    <!--                        Футер-->
+    <footer class="main-footer">
+<!--                        Тег-->
+        <p class="footer-tag">#VisitSedona</p>
+<!--                        Кнопки соц сетей-->
+        <div class="footer-social">
+            <ul>
+                <li> <a class="social-button" href="twitter.com">Твиттер</a></li>
+                <li> <a class="social-button" href="facebook.com">Фейсбук</a></li>
+                <li> <a class="social-button" href="youtube.com">Ютуб</a></li>
+            </ul>
+        </div> 
+<!--                        Лого с ссылкой на академию-->
+        
+        <a href="htmlacademy.ru">
+        <img src="#" alt="Лого htmlacademy.ru">
+        </a>
+    </footer>
+
+  </body>
+</html>
