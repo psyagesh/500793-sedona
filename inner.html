@@ -24,6 +24,7 @@
     <main>
         <section class="search-filter">
         <h1 class="visually-hidden">Фильтр гостиниц</h1>
+			
         <p>Инфраструктура:</p>
         <ul class="infrastructure">
             <li><input type="checkbox" checked name="swim-pool" id="swim-pool-field">
@@ -36,6 +37,7 @@
                 <label for="swim-pool-field">Wi-Fi</label>
             </li>
         </ul>
+			
         <p>Тип жилья:</p>
         <ul class="type-of-hotels">
             <li><input type="checkbox" checked name="hotel" id="hotel-field">
@@ -48,10 +50,24 @@
                 <label for="swim-pool-field">Апартаменты</label>
             </li>
         </ul>
-        <p>Стоимость в сутки(Р):</p>
-        <p>от 0</p>
-        <p>до 3000</p>
-        <button class="submit" type="submit">Показать</button>
+<!--						Фильтр диапазон цен-->
+		<form action="#" method="get">
+			<h4>Стоимость в сутки(Р):</h4>
+			
+			<div class="from-input">
+			<input type="text" name="from" value="От 0">
+			</div>
+			
+			<div  class="to-input"> 
+			<input type="text" name="to" value="До 3000">
+			</div>
+			
+			<div class="range-input"></div>
+			<input type="range" min="0" max="3000" step="100" id="count" name="count">
+			</form>
+			
+			<button class="submit" type="submit">Показать</button>
+		</form>
         </section>
 <!--                Сортировка-->
         <section class="main-sorting">
@@ -72,9 +88,18 @@
                 <p>Гостиница</p>
                 <p>от 3500 Р.</p>
                 <a class="button" href="#">Подробнее</a>
-                <a class="button" href="#">Забронировать</a>   
+                <a class="button" href="#">Забронировать</a>
+				
+				<div class="right-side">
+					<span>1</span>
+					<span>2</span>
+					<span>3</span>
+					<span>4</span>
+					<span>5</span>
                 <span>Рейтинг:8,5</span>
+				</div>
             </li>
+			
             <li>
                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото Amara Resort">
                 <h3>Desert Quail Inn</h3>
@@ -84,6 +109,7 @@
                 <a class="button" href="#">Забронировать</a>  
                 <span>Рейтинг:8,9</span>
             </li>
+			
             <li>
                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото Amara Resort">
                 <h3>Villas At Poco Diablos</h3>
