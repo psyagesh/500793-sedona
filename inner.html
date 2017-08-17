@@ -20,10 +20,11 @@
             </ul>  
         </nav>
       </header>
-<!--                Фильтр поиска гостиниц-->
+<!--                легенд Фильтр поиска гостиниц-->
     <main>
-        <section class="search-filter">
-        <h1 class="visually-hidden">Фильтр гостиниц</h1>
+        <fieldset class="search-filter">
+		<legend class="visually-hidden">Фильтр гостиниц</legend>
+		<form action="#" method="get">
 			
         <p>Инфраструктура:</p>
         <ul class="infrastructure">
@@ -51,25 +52,24 @@
             </li>
         </ul>
 <!--						Фильтр диапазон цен-->
-		<form action="#" method="get">
+		
+		<div class="range-input from-to-input">
 			<h4>Стоимость в сутки(Р):</h4>
-			
-			<div class="from-input">
 			<input type="text" name="from" value="От 0">
-			</div>
-			
-			<div  class="to-input"> 
 			<input type="text" name="to" value="До 3000">
-			</div>
+		</div>
 			
-			<div class="range-input"></div>
-			<input type="range" min="0" max="3000" step="100" id="count" name="count">
-			</form>
-			
+		<div class="range-line">
+			<span class="line"></span>
+			<span class="dote-left"></span>
+			<span class="dote-right"></span>
+		</div>
+		</form>
+<!--						Кнопка показать-->
 			<button class="submit" type="submit">Показать</button>
 		</form>
-        </section>
-<!--                Сортировка-->
+        </fieldset>
+<!--                		Сортировка-->
         <section class="main-sorting">
         <h3>Найдено:</h3>
         <span>Сортировка:</span>
@@ -78,48 +78,58 @@
                 <li><a class="sorting-button" href="#">По типу</a></li>
                 <li><a class="sorting-button" href="#">По рейтингу</a></li>
             </ul>
+<!--						Треугольники сортировки-->
+			<div class="triangles">
+				<span class="up"></span>
+				<span class="down"></span>
+			</div>
         </section>
-<!--                    Результат поиска-->
+<!--                    	Результат поиска-->
         <section class="result">
-        <ul>
-            <li>
+            <div class="left-block">
                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото Amara Resort">
                 <h3>Amara Resort & Spa</h3>
                 <p>Гостиница</p>
                 <p>от 3500 Р.</p>
                 <a class="button" href="#">Подробнее</a>
                 <a class="button" href="#">Забронировать</a>
-				
-				<div class="right-side">
-					<span>1</span>
-					<span>2</span>
-					<span>3</span>
-					<span>4</span>
-					<span>5</span>
-                <span>Рейтинг:8,5</span>
-				</div>
-            </li>
+			</div>	
+			<div class="right-block">
+				<span class="stars"></span>
+				<span class="stars"></span>
+				<span class="stars"></span>
+				<span class="stars"></span>
+                <span class="rating">Рейтинг:8,5</span>
+			</div>
 			
-            <li>
+            <div class="left-block">
                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото Amara Resort">
                 <h3>Desert Quail Inn</h3>
                 <p>Мотель</p>
                 <p>от 2000 Р.</p>
                 <a class="button" href="#">Подробнее</a>
-                <a class="button" href="#">Забронировать</a>  
-                <span>Рейтинг:8,9</span>
-            </li>
+                <a class="button" href="#">Забронировать</a> 
+            </div>
+			<div class="right-block">
+				<span class="stars"></span>
+				<span class="stars"></span>
+                <span class="rating">Рейтинг:8,9</span>
+			</div>
 			
-            <li>
+            <div class="left-block">
                 <img src="http://placehold.it/150x100" width="150" height="100" alt="Фото Amara Resort">
                 <h3>Villas At Poco Diablos</h3>
                 <p>Апартаменты</p>
                 <p>от 4000 Р.</p>
                 <a class="button" href="#">Подробнее</a>
                 <a class="button" href="#">Забронировать</a>  
-                <span>Рейтинг:9,2</span>
-            </li>
-        </ul>
+            </div>
+			<div class="right-block">
+				<span class="stars"></span>
+				<span class="stars"></span>
+				<span class="stars"></span>
+                <span class="rating">Рейтинг:9,2</span>
+			</div>
         </section>
     </main>
     <!--                        Футер-->
