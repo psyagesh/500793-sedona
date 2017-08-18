@@ -1,0 +1,35 @@
+body {
+	font-family: PT Sans;
+	font-size:  14px;
+	line-height: 26px;
+	color: #333333;
+	font-weight: normal;
+}
+
+h2.title {
+	font-size:  21px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: bold;
+}
+
+h2.white-title {
+	font-size:  21px;
+	line-height: 26px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+h3.black-title {
+	font-size:  21px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: bold;
+}
+
+h3.search-black-title {
+	font-size:  30px;
+	line-height: 36px;
+	color: #000000;
+	font-weight: bold;
+}
