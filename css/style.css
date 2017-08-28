@@ -1,35 +1,342 @@
 body {
+	margin: 0;
+	padding: 0;
+	
 	font-family: PT Sans;
 	font-size:  14px;
-	line-height: 26px;
+	line-height: 21px;
 	color: #333333;
 	font-weight: normal;
+	text-transform: uppercase;
+	
+	background-color: #ffffff;
 }
 
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+a {
+	text-decoration: none;
+} 
 h2.title {
 	font-size:  21px;
 	line-height: 26px;
 	color: #000000;
 	font-weight: bold;
+	text-align: center;
 }
-
 h2.white-title {
 	font-size:  21px;
 	line-height: 26px;
 	color: #ffffff;
 	font-weight: bold;
+	text-align: center;
 }
-
 h3.black-title {
 	font-size:  21px;
 	line-height: 26px;
 	color: #000000;
 	font-weight: bold;
+	text-align: center;
 }
-
 h3.search-black-title {
 	font-size:  30px;
 	line-height: 36px;
 	color: #000000;
 	font-weight: bold;
+	text-align: center;
+}
+.main-navigation {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #ffffff;
+}
+/*			Стили Навигации*/
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a{
+	color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+	color: #81b3d2;
+}
+.site-navigation a:active {
+	opacity: 0.3;
+}
+/*			Заголовок*/
+.title-items {
+	text-align: center;
+	line-height: 26px;
+}
+/*			Синий блок*/
+.blue-feature-block {
+	background-color: #81b3d2;
+}
+
+.blue-feature-block p {
+	color: #ffffff;
+	text-align: center;
+}
+.advices-logo {
+	list-style: none;
+}
+.advices-block {
+	vertical-align: top;
+}
+.advices-block p {
+	text-align: center;
+}
+
+.gray-feature-block {
+	background-color: #eeeeee;
+}
+.gray-feature-block p{
+	background-color: #eeeeee;
+	text-align: center;
+}
+.search-hotels p {
+	text-align: center;
+}
+/*			Кнопка поиска гостиницы*/
+.search-button {
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #766357;
+	text-transform: uppercase;
+	padding: 35px 140px 35px 140px;
+	border: none;
+}
+.search-button:hover,
+.search-button:focus{
+	background-color: #604e43;
+}
+.search-button:active{
+	background-color: #503e33;
+	color: #928a85;
+}
+/*		Настройки шрифта для формы*/
+.search-form p {
+	font-weight: bold;
+	line-height: 26px;
+}
+/*			Кнопка Найти*/
+.find-button {
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #81b3d2;
+	text-transform: uppercase;
+	padding: 17px 195px 17px 195px;
+	border: none;
+}
+.find-button:hover,
+.find-button:focus{
+	background-color: #669ec0;
+}
+
+.find-button:active{
+	background-color: #5496bd;
+	color: #94b9d2;
+}
+
+/*			Поля ввода*/
+.search-form-in input,
+.search-form-out input,
+.search-form-adults input,
+.search-form-children input{
+	background-color: #f2f2f2;
+	border: none;
+}
+.search-form-in input:hover,
+.search-form-out input:hover,
+.search-form-adults input:hover,
+.search-form-children input:hover{
+	background-color: #ebebeb;
+}
+.search-form-in input:focus,
+.search-form-out input:focus,
+.search-form-adults input:focus,
+.search-form-children input:focus{
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5; 
+}
+/*		Стили иконок покой*/
+.svg-calendar{
+	fill: #cacaca;
+}
+.svg-minus{
+	fill: #cacaca;
+}
+.svg-plus{
+	fill: #cacaca;
+}
+/*		Стили иконок наведение*/
+.svg-calendar:hover{
+	fill: #000000;
+}
+.svg-minus:hover{
+	fill: #000000;
+}
+.svg-plus:hover{
+	fill: #000000;
+}
+/*		Стили иконок нажатие*/
+.svg-calendar:active{
+	fill: #81b3d2;
+}
+.svg-minus:active{
+	fill: #81b3d2;
+}
+.svg-plus:active{
+	fill: #81b3d2;
+}
+/*		Стили футера*/
+.main-footer {
+	background-color: #ffffff;
+}
+.footer-tag {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.footer-social ul{
+	list-style: none;
+	text-align: center;
+}
+.footer-copyright {
+	text-align: center;
+}
+.academy-logo:hover{
+	fill: #81b3d2;
+}
+.academy-logo:active{
+	fill: #bdbbbc;
+}
+
+/*			-----Вторая страницы-----*/
+
+
+
+/*				Стили фильтра*/
+.search-filter {
+	background-color: #719bc1;
+	background-image: url("../img/filter background.jpg");
+	background-repeat: no-repeat;
+	border: 0;	
+}
+
+.search-filter ul {
+	list-style: none;
+}
+.main-sorting ul {
+	list-style: none;
+}
+.search-filter p {
+	font-weight: bold;
+	color: #ffffff;
+}
+.search-filter {
+	color: #ffffff;
+}
+/*			Кнопка показать*/
+.show-button {
+	padding: 11px 35px 11px 35px;
+	background-color: transparent;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+.show-button:hover,
+.show-button:focus,
+.show-button:active {
+	color: #000000;
+	background-color: #ffffff;
+}
+/*			Стили состояния кнопок сортировки*/
+.sorting a {
+	color: #000000;
+	opacity: 0.3;
+	border-bottom: 1px dashed #81b3d2;
+	text-transform: lowercase;
+}
+.sorting a:hover,
+.sorting a:focus {
+	color: #81b3d2;
+	border-bottom: none;
+}
+.sorting a:active {
+	color: #000000;
+	opacity: 1.0;
+}
+/*			Треугольники сортировки*/
+.up {
+	fill: #cacaca;
+}
+.up:hover{
+	fill: #000000;
+}
+.up:active {
+	fill: #81b3d2;
+}
+
+.down {
+	fill: #cacaca;
+}
+.down:hover{
+	fill: #000000;
+}
+.down:active {
+	fill: #81b3d2;
+}
+
+/*			Стили состояния кнопок - ПОДРОБНЕЕ - ЗАБЛОКИРОВАТЬ*/
+.button-more {
+	padding: 8px 17px 8px 17px;
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+.button-more:hover,
+.button-more:focus {
+	color: #ffffff;
+	background-color: #669ec0;
+}
+.button-more:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #5496bd;
+}
+.button-reserve {
+	padding: 8px 17px 8px 17px;
+	color: #ffffff;
+	background-color: #766357;
+}
+.button-reserve:hover,
+.button-reserve:focus {
+	color: #ffffff;
+	background-color: #604e43;
+}
+.button-reserve:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #503e33;
+}
+/*				Рейтинг и звезды*/
+.rating {
+	padding: 6px 14px 8px 16px;
+	background-color: #f2f2f2;
+}
+.stars {
+	background-image: url("../img/star.svg");
+	fill: #81b3d2;
 }
