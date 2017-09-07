@@ -69,6 +69,8 @@ h3.black-title-advices {
 	color: #000000;
 	font-weight: bold;
 	text-align: center;
+	margin-bottom: 24px;
+
 }
 h3.black-title-gray {
 	font-size:  21px;
@@ -137,7 +139,7 @@ h3.search-black-title {
 .gray-feature-block p{
 	background-color: #eeeeee;
 	text-align: center;
-	margin: 15px;
+	margin-bottom: 8px;
 }
 .gray-feature-block h3{
 	text-align: center;
@@ -148,7 +150,8 @@ h3.search-black-title {
 }
 /*			Кнопка поиска гостиницы*/
 .search-button {
-	font-size: 21px;
+	position: relative;
+	font-size: 20px;
 	letter-spacing: -1px;
     width: 568px;
 	line-height: 26px;
@@ -158,6 +161,7 @@ h3.search-black-title {
 	text-transform: uppercase;
 	padding: 29px 126px 31px 126px;
 	border: none;
+	cursor: pointer;
 
 }
 .search-button:hover,
@@ -181,7 +185,7 @@ h3.search-black-title {
 	color: #ffffff;
 	background-color: #81b3d2;
 	text-transform: uppercase;
-	padding: 17px 195px 17px 195px;
+	padding: 17px 193px 17px 195px;
 	border: none;
 }
 .find-button:hover,
@@ -228,6 +232,7 @@ h3.search-black-title {
 /*		Стили иконок наведение*/
 .svg-calendar:hover{
 	fill: #000000;
+	cursor: pointer;
 }
 .svg-minus:hover{
 	fill: #000000;
@@ -323,7 +328,6 @@ legend {
 	color: #000000;
 	opacity: 0.3;
 	border-bottom: 1px dashed #81b3d2;
-	text-transform: lowercase;
 }
 .sorting a:hover,
 .sorting a:focus {
@@ -444,12 +448,12 @@ legend {
 .site-navigation li:nth-child(2){
 	text-align: left;
 	margin: auto;
-	margin-left: 2px;
+	margin-left: 1px;
 }
 .site-navigation li:nth-child(3){
 	text-align: right;
 	margin: auto;
-	margin-right: 6px;
+	margin-right: 4px;
 }
 .site-navigation li:nth-child(4){
 	text-align: right;
@@ -541,8 +545,10 @@ h2.white-title {
 	
 }
 .blue-feature-block p {
-	width: 309px;
+	width: 310px;
 	margin: 10px;
+	padding-bottom: 5px;
+
 }
 .photo-city {
 	width: 66.7%;
@@ -578,39 +584,44 @@ h2.white-title {
 }
 .advices-item {
 	width: 304px;
+    min-height: 205px;
+
 /*	border: 1px solid black; */
 }
 .advices-item:nth-child(1)::before {
 	content: url("../img/icon-1.svg");
+	background-size: width="75px" height="72px";
 	margin-left: 115px;
 }
 .advices-item:nth-child(2)::before {
 	content: url("../img/icon-3.svg");
+	background-size: width="75px" height="72px";
 	margin-left: 115px;
 } 
 .advices-item:nth-child(3)::before {
 	content: url("../img/icon-2.svg");
+	background-size: width="75px" height="72px";
 	margin-left: 115px;
 }
 /*				Серый блок*/
 .gray-feature-block {
 	margin: 0;
 	padding: 0;
-	padding: 26px;
     display: flex;
     min-height: 205px;
-	align-items: center;
 	justify-content: space-around;
+	padding-top: 29px;
+    padding-bottom: 23px;
 }
 .gray-block {
-	width: 300px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	width: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h3.black-title-gray {
 	width: 130px;
-	margin: 8px;
+    margin-bottom: 8px;
 }
 /*				Блок "Заинтересовались?"*/
 .search-hotels {
@@ -684,7 +695,6 @@ h3.search-black-title {
 	align-items: center;
 	text-align: center;
 /*	border: 1px solid black; */
-		
 }
 /*							КОПИРАЙТ*/
 .copyright-wrapper {
@@ -696,6 +706,10 @@ h3.search-black-title {
 	position: relative;
 	margin-right: 103px;
     margin-left: -20px;
+}
+.footer-copyright{
+	margin-left: 11px;
+
 }
 .copyright-wrapper a {
 	position: absolute;
@@ -746,7 +760,7 @@ a.social-button:focus {
 }
 
 .infrastructure-wrapper {
-    margin-right: 111px;
+    margin-right: 119px;
 }
 .types-wrapper {
 
@@ -883,7 +897,7 @@ ul.type-of-hotels {
 .range-controls {
   position: relative;
 
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .range-controls .scale {
@@ -984,12 +998,14 @@ ul.type-of-hotels {
 	min-height: 25px;
 }
 .sorting li {
-	    padding: 0 19px;
+    padding-right: 3px;
+    padding-left: 28px;
+		text-transform: uppercase;
+
 }
 ul.sorting {
 	padding: 0;
-	font-size: 14px;
-	padding-bottom: 6px;
+	font-size: 12px;
 }
 .triangles {
 	min-height: 50px;
@@ -1001,6 +1017,7 @@ ul.sorting {
 }
 .triangles span {
 	padding: 5px;
+	cursor: pointer;
 }
 /*																		Блоки результата поиска*/
 .result-wrapper {
@@ -1064,10 +1081,10 @@ ul.sorting {
 /*																		Всплывающее окно*/
 
 .modal {
-	position: fixed;
-/*	display: none;*/
+	position: absolute;
+	display: block;
 	left: 0;
-	top: 0px;
+    top: 2169px;
 	margin-left: 556px;
 	font-weight: bold;
 	color: #000000;
@@ -1078,12 +1095,22 @@ ul.sorting {
 	width: 458px;
 	padding: 56px 55px 55px 55px;
 }
+.modal-hide {
+	display: none;
+}
+.modal-show {
+	display: block;
+}
 .search-form {
 	width: 461px;
 }
 .search-form-in {
 	margin: 0;
 	margin-bottom: 30px;
+}
+.search-form-in label {
+	margin-right: 4px;
+
 }
 .search-form-in span {
 	position: absolute;
@@ -1178,3 +1205,17 @@ ul.sorting {
     left: 435px;
     z-index: 1;
 }
+
+
+
+@keyframes shake {
+	0%, 100% 			{transform: translateX(0); }
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px); }
+	20%, 40%, 50%, 80% 	{transform: translateX(10px); }
+}
+.modal-error {
+	animation-name: shake;
+	animation-duration: 0.2s;
+	
+}
+
